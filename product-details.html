@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cellular Radiance Vitamin C Serum — NÉA</title>
+  <meta name="description" content="Cellular Radiance Vitamin C Serum by NÉA. Formulated with 15% active Vitamin C, Damascus rose water, and fermented squalane." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" href="assets/images/logo-icon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/logo-icon.svg" />
+
+  <!-- Icons & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span><i class="fas fa-sparkles"></i> Complimentary Worldwide Delivery on Orders Over $75</span>
+    <span class="divider-dot">•</span>
+    <span><i class="fas fa-leaf"></i> 100% Clean & Sustainable Botanical Formulations</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container container-wide">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="NÉA Home">
+          <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-text-group">
+            <span class="brand-name">NÉA</span>
+            <span class="brand-sub">PARIS</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="shop.html" class="nav-link active">Shop</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="headerSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+          </button>
+          
+          <button class="action-btn" id="headerWishBtn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="action-badge" id="headerWishCount">0</span>
+          </button>
+
+          <button class="action-btn" id="headerCartBtn" aria-label="Shopping Bag">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="action-badge" id="headerCartCount">0</span>
+          </button>
+
+          <a href="contact.html" class="nav-reach-btn" aria-label="Reach Out to Us">
+            <span>Reach</span>
+          </a>
+
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-menu-header">
+          <div class="brand-logo" style="gap: 0.65rem;">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="36" height="36" />
+            <div class="brand-text-group">
+              <span class="brand-name" style="font-size: 1.35rem;">NÉA</span>
+              <span class="brand-sub" style="font-size: 0.52rem; letter-spacing: 0.38em;">PARIS</span>
+            </div>
+          </div>
+          <button class="close-btn" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+
+        <!-- Mobile Drawer Quick Actions -->
+        <div class="mobile-drawer-actions">
+          <button class="mobile-action-card" id="mobileSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </button>
+          
+          <button class="mobile-action-card" id="mobileWishBtn" aria-label="Wishlist">
+            <div class="mobile-icon-wrap">
+              <i class="far fa-heart"></i>
+              <span class="action-badge" id="mobileWishCount">0</span>
+            </div>
+            <span>Wishlist</span>
+          </button>
+
+          <button class="mobile-action-card" id="mobileCartBtn" aria-label="Shopping Bag">
+            <div class="mobile-icon-wrap">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="action-badge" id="mobileCartCount">0</span>
+            </div>
+            <span>Bag</span>
+          </button>
+        </div>
+
+        <ul class="mobile-links">
+          <li><a href="index.html" class="mobile-link">Home</a></li>
+          <li><a href="shop.html" class="mobile-link active">Shop</a></li>
+          <li><a href="about.html" class="mobile-link">About</a></li>
+          <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        </ul>
+
+        <div style="margin-top: 1.5rem; width: 100%;">
+          <a href="contact.html" class="mobile-drawer-reach-btn">
+            <span>Reach Us</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-light);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Conscious luxury botanical formulations for radiant skin and hair.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="pdp-section" id="pdpContainer">
+      <div class="container container-wide">
+        
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <a href="shop.html">Shop</a>
+          <span class="divider">/</span>
+          <span id="pdpCategory">Skincare</span>
+          <span class="divider">/</span>
+          <span id="pdpBreadcrumbTitle" style="color: var(--secondary); font-weight: 600;">Cellular Radiance Serum</span>
+        </nav>
+
+        <!-- Product Details 2-Column Grid -->
+        <div class="pdp-grid">
+          
+          <!-- Product Gallery with Zoom & Thumbnails -->
+          <div class="pdp-gallery">
+            <div class="pdp-main-image-wrap" id="pdpMainWrap">
+              <img src="assets/images/radiance-serum.webp" alt="Cellular Radiance Vitamin C Serum" id="pdpMainImage" />
+            </div>
+            
+            <div class="pdp-thumbs" id="pdpThumbs">
+              <!-- Thumbnails generated dynamically by main.js -->
+            </div>
+          </div>
+
+          <!-- Product Info & Purchase Controls -->
+          <div class="pdp-info">
+            <span class="eyebrow"><i class="fas fa-sparkles"></i> Award Winner 2026</span>
+            <h1 class="pdp-title" id="pdpTitle">Cellular Radiance Vitamin C Serum</h1>
+
+            <div class="pdp-meta-row">
+              <div class="product-rating-box" style="margin-bottom: 0;">
+                <div class="star-icons">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span id="pdpRating">4.9 (184 verified reviews)</span>
+              </div>
+            </div>
+
+            <div class="pdp-price" id="pdpPrice">$88.00</div>
+            
+            <p class="pdp-desc" id="pdpDesc">
+              A multi-correctional botanical elixir formulated with 15% stabilised Vitamin C, Damascus rose water, and fermented squalane to restore luminous radiance and strengthen the epidermal barrier.
+            </p>
+
+            <!-- Key Benefit Badges -->
+            <div class="pdp-benefits-tags">
+              <span class="benefit-badge"><i class="fas fa-tint"></i> 72h Deep Hydration</span>
+              <span class="benefit-badge"><i class="fas fa-shield-alt"></i> Supports Skin Barrier</span>
+              <span class="benefit-badge"><i class="fas fa-feather"></i> Lightweight Texture</span>
+              <span class="benefit-badge"><i class="fas fa-user-md"></i> Dermatologically Tested</span>
+              <span class="benefit-badge"><i class="fas fa-leaf"></i> 100% Vegan & Cruelty-Free</span>
+            </div>
+
+            <!-- Variant Selector -->
+            <div class="variant-selector-group">
+              <span class="selector-label">Select Size / Volume</span>
+              <div class="size-options" id="pdpVariantsWrap">
+                <button class="size-btn active">30ml / 1.0 fl. oz.</button>
+                <button class="size-btn">50ml / 1.7 fl. oz.</button>
+                <button class="size-btn">100ml / 3.4 fl. oz.</button>
+              </div>
+            </div>
+
+            <!-- Purchase Row -->
+            <div class="pdp-purchase-row">
+              <div class="quantity-control">
+                <button class="qty-btn" onclick="changePDPQuantity(-1)" aria-label="Decrease quantity">−</button>
+                <span class="qty-val" id="pdpQuantity">1</span>
+                <button class="qty-btn" onclick="changePDPQuantity(1)" aria-label="Increase quantity">+</button>
+              </div>
+
+              <button class="btn btn-primary" id="pdpAddToBagBtn" style="flex-grow: 1;">
+                <span>Add to Bag</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
+              <button class="btn btn-secondary" id="pdpWishlistBtn">
+                <i class="far fa-heart"></i> Add to Wishlist
+              </button>
+            </div>
+
+            <!-- Shipping Note -->
+            <div style="background: var(--surface-soft); padding: 1rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--secondary); margin-bottom: 2.5rem; display: flex; align-items: center; gap: 10px;">
+              <i class="fas fa-truck" style="font-size: 1.1rem; color: var(--primary-deep);"></i>
+              <div>
+                <strong>Complimentary Express Shipping</strong> on all orders over $75. Dispatched within 24 hours in FSC-certified sustainable packaging.
+              </div>
+            </div>
+
+            <!-- Accordion Details -->
+            <div class="accordion-group">
+              <!-- Item 1: Description -->
+              <div class="accordion-item active">
+                <button class="accordion-trigger">
+                  <span>The Formula & Clinical Benefits</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content" style="max-height: 300px;">
+                  <div class="accordion-content-inner">
+                    Designed for modern complexions challenged by pollution, screen fatigue, and dehydration. This clean botanical serum fuses French Alpine rose stem cells with high-potency Vitamin C to brighten hyperpigmentation, accelerate cellular renewal, and shield collagen matrix from premature degradation.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Ingredients -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Active Botanical Ingredients</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <strong>Hero Ingredients:</strong><br />
+                    • <strong>15% THD Ascorbate (Stabilised Vitamin C):</strong> Deep penetrating lipid-soluble antioxidant that brightens without irritation.<br />
+                    • <strong>Rosa Damascena Flower Water:</strong> Distilled in Grasse, France to soothe, calm micro-redness, and balance natural moisture.<br />
+                    • <strong>Fermented Sugarcane Squalane:</strong> 100% bio-compatible lipid that replenishes essential barrier moisture without clogging pores.<br />
+                    • <strong>Niacinamide (Vitamin B3):</strong> Refines enlarged pore appearance and evens skin tone.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: How to Use -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Ritual & How to Use</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    Morning and evening, dispense 3 to 4 golden drops onto fingertips. Gently press and glide across cleansed face, neck, and décolletage in upward sweeping motions. Allow 60 seconds for cellular absorption before following with your Barrier Repair Velvet Moisturizer. Always wear SPF during daytime.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Delivery & Returns -->
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Delivery & Sustainable Returns</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    All orders are hand-packaged in recyclable paper boxes with biodegradable vegetable inks. We offer complimentary 30-day returns on all unopened products. Contact our customer concierge for seamless assistance.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Section: You May Also Love -->
+        <div style="padding-top: 5rem; border-top: 1px solid var(--border-light);">
+          <div style="text-align: center; margin-bottom: 3.5rem;">
+            <span class="eyebrow">Complementary Rituals</span>
+            <h2>You May Also Love</h2>
+          </div>
+
+          <div class="product-grid-home" id="pdpRelatedGrid">
+            <!-- 4 Related Cards injected by main.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <aside class="cart-drawer" aria-label="Shopping Bag Drawer">
+      <div class="cart-header">
+        <h3>Your Beauty Bag</h3>
+        <button class="close-btn" id="cartDrawerClose" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="shipping-progress-bar">
+        <div class="progress-text" id="shippingProgressText">
+          <span>Complimentary Shipping at $75</span>
+          <span>0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered by main.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Estimated Subtotal</span>
+          <strong id="cartSubtotalAmount">$0.00</strong>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;" onclick="showToast('Proceeding to secure checkout...', 'fa-lock')">
+          <span>Checkout Securely</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p style="text-align: center; font-size: 0.75rem; color: var(--text-light); margin-top: 0.75rem;">
+          Taxes and shipping calculated at checkout.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="quickview-modal-overlay" id="quickViewModal">
+    <div class="quickview-dialog">
+      <button class="quickview-close-btn" onclick="closeQuickView()" aria-label="Close Quick View">&times;</button>
+      <div id="quickViewContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Search Overlay Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal-inner">
+      <div class="search-header-row">
+        <button class="close-btn" id="searchModalClose" aria-label="Close Search">&times;</button>
+      </div>
+      <input type="text" class="search-input-field" id="liveSearchInput" placeholder="Search formulas, categories, ingredients..." aria-label="Search Catalog" />
+      <div class="search-results-grid" id="searchResultsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="NÉA Home">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img footer-logo-img" width="44" height="44" />
+            <div class="brand-text-group">
+              <span class="brand-name">NÉA</span>
+              <span class="brand-sub">PARIS</span>
+            </div>
+          </a>
+          <p>
+            Elevating daily self-care into sensorial rituals with wild-harvested French botanicals and clean, conscious cosmetic science.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Collections</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=skincare">Clean Skincare</a></li>
+            <li><a href="shop.html?category=makeup">Couture Makeup</a></li>
+            <li><a href="shop.html?category=haircare">Botanical Haircare</a></li>
+            <li><a href="shop.html">Best Sellers Archive</a></li>
+            <li><a href="shop.html">Award-Winning Serums</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Concierge</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Concierge & Contact</a></li>
+            <li><a href="about.html">Our Botanical Story</a></li>
+            <li><a href="contact.html">Shipping & Global Delivery</a></li>
+            <li><a href="contact.html">Sustainable Packaging</a></li>
+            <li><a href="contact.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>NÉA Journal</h4>
+          <p style="color: #C5B5BA; font-size: 0.88rem; margin-bottom: 1.25rem;">
+            Subscribe to receive private invitations to seasonal launches and skincare consultations.
+          </p>
+          <form class="newsletter-form" style="padding: 4px 6px 4px 14px;">
+            <input type="email" class="newsletter-input" placeholder="Your email..." required style="color: #fff;" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Copyright &copy; 2026 NÉA. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Floating Scroll to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

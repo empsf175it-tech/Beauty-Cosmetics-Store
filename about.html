@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Our Botanical Heritage — NÉA</title>
+  <meta name="description" content="Learn about NÉA: our founders, French alpine botanical sourcing, conscious cosmetic science, and our promise of modern beauty rituals." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" href="assets/images/logo-icon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/logo-icon.svg" />
+
+  <!-- Icons & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span><i class="fas fa-sparkles"></i> Complimentary Worldwide Delivery on Orders Over $75</span>
+    <span class="divider-dot">•</span>
+    <span><i class="fas fa-leaf"></i> 100% Clean & Sustainable Botanical Formulations</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container container-wide">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="NÉA Home">
+          <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-text-group">
+            <span class="brand-name">NÉA</span>
+            <span class="brand-sub">PARIS</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="headerSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+          </button>
+          
+          <button class="action-btn" id="headerWishBtn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="action-badge" id="headerWishCount">0</span>
+          </button>
+
+          <button class="action-btn" id="headerCartBtn" aria-label="Shopping Bag">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="action-badge" id="headerCartCount">0</span>
+          </button>
+
+          <a href="contact.html" class="nav-reach-btn" aria-label="Reach Out to Us">
+            <span>Reach</span>
+          </a>
+
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-menu-header">
+          <div class="brand-logo" style="gap: 0.65rem;">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="36" height="36" />
+            <div class="brand-text-group">
+              <span class="brand-name" style="font-size: 1.35rem;">NÉA</span>
+              <span class="brand-sub" style="font-size: 0.52rem; letter-spacing: 0.38em;">PARIS</span>
+            </div>
+          </div>
+          <button class="close-btn" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+
+        <!-- Mobile Drawer Quick Actions -->
+        <div class="mobile-drawer-actions">
+          <button class="mobile-action-card" id="mobileSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </button>
+          
+          <button class="mobile-action-card" id="mobileWishBtn" aria-label="Wishlist">
+            <div class="mobile-icon-wrap">
+              <i class="far fa-heart"></i>
+              <span class="action-badge" id="mobileWishCount">0</span>
+            </div>
+            <span>Wishlist</span>
+          </button>
+
+          <button class="mobile-action-card" id="mobileCartBtn" aria-label="Shopping Bag">
+            <div class="mobile-icon-wrap">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="action-badge" id="mobileCartCount">0</span>
+            </div>
+            <span>Bag</span>
+          </button>
+        </div>
+
+        <ul class="mobile-links">
+          <li><a href="index.html" class="mobile-link">Home</a></li>
+          <li><a href="shop.html" class="mobile-link">Shop</a></li>
+          <li><a href="about.html" class="mobile-link active">About</a></li>
+          <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        </ul>
+
+        <div style="margin-top: 1.5rem; width: 100%;">
+          <a href="contact.html" class="mobile-drawer-reach-btn">
+            <span>Reach Us</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-light);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Conscious luxury botanical formulations for radiant skin and hair.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Section 1: About Hero -->
+    <section class="about-hero">
+      <div class="container container-narrow">
+        <span class="eyebrow"><i class="fas fa-seedling"></i> Conscious Luxury</span>
+        <h1 style="margin-bottom: 1.5rem;">Beauty With Intention</h1>
+        <p style="font-size: 1.25rem; max-width: 680px; margin: 0 auto; color: var(--text-muted);">
+          Founded on the philosophy that genuine radiance begins where biological respect meets high-fashion artistry.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2: Our Story (Asymmetric text/image layout) -->
+    <section class="about-story-section">
+      <div class="container container-wide">
+        <div class="about-story-grid">
+          
+          <div class="about-story-img-box">
+            <img src="assets/images/about-hero-editorial.webp" alt="NÉA Portrait of Radiant Confidence" loading="lazy" />
+          </div>
+
+          <div class="about-story-content">
+            <span class="eyebrow">Our Origins</span>
+            <h2 style="margin-bottom: 1.5rem;">Born from the Alpine Valleys of Provence</h2>
+            <p style="margin-bottom: 1.25rem;">
+              NÉA was conceived between Paris and Grasse with a singular conviction: luxury beauty should never demand compromise between pure biological safety and breathtaking efficacy.
+            </p>
+            <p style="margin-bottom: 1.5rem;">
+              After decades formulating for heritage Parisian houses, our founding biochemists partnered with French botanists to isolate potent cellular phytonutrients from wild alpine roses, peony roots, and organic camellia. The result is a sensorial dialogue of clean, skin-identical bio-lipids that celebrate your personal contour rather than mask it.
+            </p>
+            <div class="about-story-metrics">
+              <div>
+                <strong style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--secondary); display: block;">Grasse & Paris</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Formulated & Distilled</span>
+              </div>
+              <div>
+                <strong style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--secondary); display: block;">100% Traceable</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Ethical Supply Chain</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Mission ("Beauty That Feels Like You") with Live Animated Counters -->
+    <section class="about-mission-section">
+      <div class="container">
+        <div class="section-header-center" style="margin-bottom: 2rem;">
+          <span class="eyebrow eyebrow-gold">Our Guiding Light</span>
+          <h2>Beauty That Feels Like You</h2>
+          <p>
+            We formulate for real skin, modern lives, and quiet moments of everyday indulgence. No impossible standards, only restorative rituals that awaken your innate luminescence.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+            <div style="font-weight: 700; color: var(--secondary); font-size: 0.9rem; margin-bottom: 4px;">Natural Origin</div>
+            <p style="font-size: 0.82rem; margin: 0;">Wild-harvested cold pressed bio-actives.</p>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+            <div style="font-weight: 700; color: var(--secondary); font-size: 0.9rem; margin-bottom: 4px;">Cruelty Free & Vegan</div>
+            <p style="font-size: 0.82rem; margin: 0;">PETA and Leaping Bunny certified.</p>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-number" data-target="240" data-suffix="k+">0</div>
+            <div style="font-weight: 700; color: var(--secondary); font-size: 0.9rem; margin-bottom: 4px;">Rituals Delivered</div>
+            <p style="font-size: 0.82rem; margin: 0;">Loved across 48 countries worldwide.</p>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-number" data-target="0" data-suffix=" Net">0</div>
+            <div style="font-weight: 700; color: var(--secondary); font-size: 0.9rem; margin-bottom: 4px;">Carbon Footprint</div>
+            <p style="font-size: 0.82rem; margin: 0;">100% offset via reforestation programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Brand Promise (Centered Icons, Centered Text, 3D Tilt Cards) -->
+    <section class="about-promise-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="eyebrow">Integrity in Every Bottle</span>
+          <h2>The NÉA Promise</h2>
+          <p>
+            Every product bearing our monogram represents an uncompromising commitment to your skin's biological harmony and our planet's future.
+          </p>
+        </div>
+
+        <div class="promise-grid">
+          
+          <!-- Promise 1 -->
+          <div class="tilt-card-wrapper">
+            <div class="promise-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="promise-icon-wrap">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h3 style="font-size: 1.45rem; margin-bottom: 0.85rem;">Thoughtful Formulas</h3>
+              <p style="font-size: 0.9rem;">
+                Free from parabens, phthalates, synthetic silicones, artificial dyes, and harsh sulfates. Only pure cellular nourishment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Promise 2 -->
+          <div class="tilt-card-wrapper">
+            <div class="promise-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="promise-icon-wrap">
+                <i class="fas fa-gem"></i>
+              </div>
+              <h3 style="font-size: 1.45rem; margin-bottom: 0.85rem;">Quality First</h3>
+              <p style="font-size: 0.9rem;">
+                Micro-batched in small artisanal runs to ensure peak ingredient freshness and optimal enzymatic potency in every drop.
+              </p>
+            </div>
+          </div>
+
+          <!-- Promise 3 -->
+          <div class="tilt-card-wrapper">
+            <div class="promise-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="promise-icon-wrap">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3 style="font-size: 1.45rem; margin-bottom: 0.85rem;">Modern Beauty</h3>
+              <p style="font-size: 0.9rem;">
+                Sensorial textures that absorb weightlessly into the skin, creating an effortless ritual designed for the modern rhythm of life.
+              </p>
+            </div>
+          </div>
+
+          <!-- Promise 4 -->
+          <div class="tilt-card-wrapper">
+            <div class="promise-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="promise-icon-wrap">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3 style="font-size: 1.45rem; margin-bottom: 0.85rem;">Made With Care</h3>
+              <p style="font-size: 0.9rem;">
+                Recyclable glass vessels, biodegradable vegetable ink cartons, and refillable architectural components designed to last a lifetime.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 4.5rem;">
+          <a href="shop.html" class="btn btn-primary">
+            <span>Experience Our Formulations</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <aside class="cart-drawer" aria-label="Shopping Bag Drawer">
+      <div class="cart-header">
+        <h3>Your Beauty Bag</h3>
+        <button class="close-btn" id="cartDrawerClose" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="shipping-progress-bar">
+        <div class="progress-text" id="shippingProgressText">
+          <span>Complimentary Shipping at $75</span>
+          <span>0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered by main.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Estimated Subtotal</span>
+          <strong id="cartSubtotalAmount">$0.00</strong>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;" onclick="showToast('Proceeding to secure checkout...', 'fa-lock')">
+          <span>Checkout Securely</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p style="text-align: center; font-size: 0.75rem; color: var(--text-light); margin-top: 0.75rem;">
+          Taxes and shipping calculated at checkout.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="quickview-modal-overlay" id="quickViewModal">
+    <div class="quickview-dialog">
+      <button class="quickview-close-btn" onclick="closeQuickView()" aria-label="Close Quick View">&times;</button>
+      <div id="quickViewContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Search Overlay Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal-inner">
+      <div class="search-header-row">
+        <button class="close-btn" id="searchModalClose" aria-label="Close Search">&times;</button>
+      </div>
+      <input type="text" class="search-input-field" id="liveSearchInput" placeholder="Search formulas, categories, ingredients..." aria-label="Search Catalog" />
+      <div class="search-results-grid" id="searchResultsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="NÉA Home">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img footer-logo-img" width="44" height="44" />
+            <div class="brand-text-group">
+              <span class="brand-name">NÉA</span>
+              <span class="brand-sub">PARIS</span>
+            </div>
+          </a>
+          <p>
+            Elevating daily self-care into sensorial rituals with wild-harvested French botanicals and clean, conscious cosmetic science.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Collections</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=skincare">Clean Skincare</a></li>
+            <li><a href="shop.html?category=makeup">Couture Makeup</a></li>
+            <li><a href="shop.html?category=haircare">Botanical Haircare</a></li>
+            <li><a href="shop.html">Best Sellers Archive</a></li>
+            <li><a href="shop.html">Award-Winning Serums</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Concierge</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Concierge & Contact</a></li>
+            <li><a href="about.html">Our Botanical Story</a></li>
+            <li><a href="contact.html">Shipping & Global Delivery</a></li>
+            <li><a href="contact.html">Sustainable Packaging</a></li>
+            <li><a href="contact.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>NÉA Journal</h4>
+          <p style="color: #C5B5BA; font-size: 0.88rem; margin-bottom: 1.25rem;">
+            Subscribe to receive private invitations to seasonal launches and skincare consultations.
+          </p>
+          <form class="newsletter-form" style="padding: 4px 6px 4px 14px;">
+            <input type="email" class="newsletter-input" placeholder="Your email..." required style="color: #fff;" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Copyright &copy; 2026 NÉA. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Floating Scroll to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

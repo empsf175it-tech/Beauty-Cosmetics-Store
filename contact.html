@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Concierge & Inquiries — NÉA</title>
+  <meta name="description" content="Get in touch with NÉA customer concierge for bespoke skincare advice, order inquiries, and boutique support." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" href="assets/images/logo-icon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/logo-icon.svg" />
+
+  <!-- Icons & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span><i class="fas fa-sparkles"></i> Complimentary Worldwide Delivery on Orders Over $75</span>
+    <span class="divider-dot">•</span>
+    <span><i class="fas fa-leaf"></i> 100% Clean & Sustainable Botanical Formulations</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container container-wide">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="NÉA Home">
+          <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-text-group">
+            <span class="brand-name">NÉA</span>
+            <span class="brand-sub">PARIS</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="action-btn" id="headerSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+          </button>
+          
+          <button class="action-btn" id="headerWishBtn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="action-badge" id="headerWishCount">0</span>
+          </button>
+
+          <button class="action-btn" id="headerCartBtn" aria-label="Shopping Bag">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="action-badge" id="headerCartCount">0</span>
+          </button>
+
+          <a href="contact.html" class="nav-reach-btn active" aria-label="Reach Out to Us">
+            <span>Reach</span>
+          </a>
+
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-menu-header">
+          <div class="brand-logo" style="gap: 0.65rem;">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="36" height="36" />
+            <div class="brand-text-group">
+              <span class="brand-name" style="font-size: 1.35rem;">NÉA</span>
+              <span class="brand-sub" style="font-size: 0.52rem; letter-spacing: 0.38em;">PARIS</span>
+            </div>
+          </div>
+          <button class="close-btn" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+
+        <!-- Mobile Drawer Quick Actions -->
+        <div class="mobile-drawer-actions">
+          <button class="mobile-action-card" id="mobileSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </button>
+          
+          <button class="mobile-action-card" id="mobileWishBtn" aria-label="Wishlist">
+            <div class="mobile-icon-wrap">
+              <i class="far fa-heart"></i>
+              <span class="action-badge" id="mobileWishCount">0</span>
+            </div>
+            <span>Wishlist</span>
+          </button>
+
+          <button class="mobile-action-card" id="mobileCartBtn" aria-label="Shopping Bag">
+            <div class="mobile-icon-wrap">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="action-badge" id="mobileCartCount">0</span>
+            </div>
+            <span>Bag</span>
+          </button>
+        </div>
+
+        <ul class="mobile-links">
+          <li><a href="index.html" class="mobile-link">Home</a></li>
+          <li><a href="shop.html" class="mobile-link">Shop</a></li>
+          <li><a href="about.html" class="mobile-link">About</a></li>
+          <li><a href="contact.html" class="mobile-link active">Contact</a></li>
+        </ul>
+
+        <div style="margin-top: 1.5rem; width: 100%;">
+          <a href="contact.html" class="mobile-drawer-reach-btn active">
+            <span>Reach Us</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-light);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Conscious luxury botanical formulations for radiant skin and hair.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container container-narrow">
+        <span class="eyebrow"><i class="fas fa-headset"></i> Dedicated Concierge</span>
+        <h1 style="margin-bottom: 1.25rem;">We're Here for Your Beauty Questions</h1>
+        <p style="font-size: 1.15rem; max-width: 620px; margin: 0 auto; color: var(--text-muted);">
+          Whether you need personalised regimen guidance, formulation inquiries, or order assistance, our beauty advisors are at your service.
+        </p>
+      </div>
+    </section>
+
+    <!-- Support Cards (Centered Icons, Centered Text, 3D Tilt) -->
+    <section style="padding: 1rem 0 5rem;">
+      <div class="container container-wide">
+        <div class="contact-support-cards">
+          
+          <!-- Card 1: Customer Care -->
+          <div class="tilt-card-wrapper">
+            <div class="support-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="support-icon-wrap">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Customer Care</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 1.25rem;">Direct assistance for account and shopping queries.</p>
+              <a href="mailto:concierge@neaparis.com" style="font-weight: 700; color: var(--secondary); font-size: 0.85rem;">concierge@neaparis.com</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Order Support -->
+          <div class="tilt-card-wrapper">
+            <div class="support-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="support-icon-wrap">
+                <i class="fas fa-box-open"></i>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Order Support</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 1.25rem;">Tracking, delivery updates, and returns handling.</p>
+              <a href="tel:+18005556327" style="font-weight: 700; color: var(--secondary); font-size: 0.85rem;">+1 (800) 555-NÉA</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Product Advice -->
+          <div class="tilt-card-wrapper">
+            <div class="support-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="support-icon-wrap">
+                <i class="fas fa-magic"></i>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Product Advice</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 1.25rem;">Complimentary botanical skin consultations with our specialists.</p>
+              <span style="font-weight: 700; color: var(--secondary); font-size: 0.85rem;">Daily 9am – 8pm CET</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Business Hours -->
+          <div class="tilt-card-wrapper">
+            <div class="support-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="support-icon-wrap">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Maison Hours</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 1.25rem;">Flagship boutiques in Paris (Place Vendôme) & New York (SoHo).</p>
+              <span style="font-weight: 700; color: var(--secondary); font-size: 0.85rem;">Mon – Sat: 10:00 – 19:30</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Main Form & Editorial Box -->
+        <div class="contact-main-grid">
+          
+          <!-- Contact Form with Real-time Validation -->
+          <div class="contact-form-box">
+            <span class="eyebrow">Message The Maison</span>
+            <h2 style="margin-bottom: 1rem;">Send Us an Inquiry</h2>
+            <p style="margin-bottom: 2.5rem; font-size: 0.95rem;">
+              Please complete the fields below. A dedicated concierge specialist will respond within 24 hours.
+            </p>
+
+            <form id="maisonContactForm" novalidate aria-label="Maison Contact Form">
+              
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Name *</label>
+                <input type="text" class="form-control" id="contactName" placeholder="e.g. Camille Laurent" required />
+                <span class="form-error-msg">Please enter your full name (minimum 2 characters).</span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address *</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="camille@example.com" required />
+                  <span class="form-error-msg">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone Number (Optional)</label>
+                  <input type="tel" class="form-control" id="contactPhone" placeholder="+1 (555) 000-0000" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactSubject">Inquiry Subject *</label>
+                <select class="form-control" id="contactSubject" required>
+                  <option value="consultation">Botanical Regimen Consultation</option>
+                  <option value="orders">Order Tracking & Delivery</option>
+                  <option value="returns">Returns & Exchanges</option>
+                  <option value="ingredients">Formula & Ingredient Safety</option>
+                  <option value="press">Press & Boutique Partnerships</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Your Message *</label>
+                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Share your inquiry or skin goals with us..." required></textarea>
+                <span class="form-error-msg">Please enter your message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                <span>Send Message</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Editorial Boutique Panel -->
+          <div class="contact-editorial-box">
+            <img src="assets/images/contact-editorial.webp" alt="NÉA Concierge Flagship Boutique" loading="lazy" />
+            <div class="contact-info-panel">
+              <h3>Flagship Boutiques</h3>
+              <p>
+                <strong>Paris Flagship:</strong><br />
+                18 Place Vendôme, 75001 Paris, France<br />
+                T: +33 1 42 68 00 20
+              </p>
+              <p>
+                <strong>New York Atelier:</strong><br />
+                412 West Broadway, SoHo, NY 10012, USA<br />
+                T: +1 212 966 5400
+              </p>
+              <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.25rem; font-size: 0.85rem; color: #D5C7CB; margin-bottom: 1.5rem;">
+                <i class="fas fa-sparkles" style="color: var(--accent-gold); margin-right: 6px;"></i>
+                Private consultations available by appointment.
+              </div>
+
+              <!-- Social Media Icons Section (Centered) -->
+              <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.25rem; text-align: center;">
+                <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-gold); margin-bottom: 0.85rem; font-weight: 600; text-align: center;">Connect With The Maison</span>
+                <div class="social-links" style="display: flex; gap: 0.75rem; justify-content: center;">
+                  <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                  <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Boutique Interactive Map Section -->
+    <section class="boutique-map-section" style="padding: 1rem 0 6rem;">
+      <div class="container container-wide">
+        
+        <div class="map-header-box">
+          <span class="eyebrow"><i class="fas fa-map-marker-alt"></i> Visit Our Flagships</span>
+          <h2 style="margin-bottom: 0.75rem;">Experience NÉA in Person</h2>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">
+            Step inside our tranquil botanical sanctuaries for bespoke skin analysis, ritual consultations, and formulation testing.
+          </p>
+          
+          <div class="map-location-tabs">
+            <button class="map-tab-btn active" onclick="switchBoutiqueMap('paris')">
+              <i class="fas fa-building"></i> Paris Flagship (Place Vendôme)
+            </button>
+            <button class="map-tab-btn" onclick="switchBoutiqueMap('ny')">
+              <i class="fas fa-city"></i> New York Atelier (SoHo)
+            </button>
+          </div>
+        </div>
+
+        <div class="map-container-wrap">
+          <!-- Paris Map Frame -->
+          <iframe 
+            id="mapFrameParis"
+            class="boutique-map-iframe active"
+            src="https://maps.google.com/maps?q=Place%20Vend%C3%B4me,%20Paris,%20France&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Paris Flagship Boutique Map">
+          </iframe>
+
+          <!-- NY Map Frame -->
+          <iframe 
+            id="mapFrameNY"
+            class="boutique-map-iframe"
+            src="https://maps.google.com/maps?q=412%20West%20Broadway,%20SoHo,%20New%20York,%20NY%2010012&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="New York Atelier Boutique Map">
+          </iframe>
+
+          <!-- Floating Info Card Overlay -->
+          <div class="map-info-overlay" id="mapOverlayParis">
+            <h4><i class="fas fa-store"></i> Paris Flagship</h4>
+            <p>18 Place Vendôme, 75001 Paris, France</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;"><i class="far fa-clock"></i> Mon – Sat: 10:00 – 19:30</p>
+            <a href="https://maps.google.com/?q=Place+Vendôme+Paris" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="width: 100%; text-align: center;">
+              <span>Get Directions</span> <i class="fas fa-directions"></i>
+            </a>
+          </div>
+
+          <div class="map-info-overlay" id="mapOverlayNY" style="display: none;">
+            <h4><i class="fas fa-store"></i> New York Atelier</h4>
+            <p>412 West Broadway, SoHo, NY 10012, USA</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;"><i class="far fa-clock"></i> Mon – Sat: 11:00 – 19:00</p>
+            <a href="https://maps.google.com/?q=412+West+Broadway+SoHo+New+York" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="width: 100%; text-align: center;">
+              <span>Get Directions</span> <i class="fas fa-directions"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <aside class="cart-drawer" aria-label="Shopping Bag Drawer">
+      <div class="cart-header">
+        <h3>Your Beauty Bag</h3>
+        <button class="close-btn" id="cartDrawerClose" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="shipping-progress-bar">
+        <div class="progress-text" id="shippingProgressText">
+          <span>Complimentary Shipping at $75</span>
+          <span>0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered by main.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Estimated Subtotal</span>
+          <strong id="cartSubtotalAmount">$0.00</strong>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;" onclick="showToast('Proceeding to secure checkout...', 'fa-lock')">
+          <span>Checkout Securely</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p style="text-align: center; font-size: 0.75rem; color: var(--text-light); margin-top: 0.75rem;">
+          Taxes and shipping calculated at checkout.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="quickview-modal-overlay" id="quickViewModal">
+    <div class="quickview-dialog">
+      <button class="quickview-close-btn" onclick="closeQuickView()" aria-label="Close Quick View">&times;</button>
+      <div id="quickViewContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Search Overlay Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal-inner">
+      <div class="search-header-row">
+        <button class="close-btn" id="searchModalClose" aria-label="Close Search">&times;</button>
+      </div>
+      <input type="text" class="search-input-field" id="liveSearchInput" placeholder="Search formulas, categories, ingredients..." aria-label="Search Catalog" />
+      <div class="search-results-grid" id="searchResultsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="NÉA Home">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img footer-logo-img" width="44" height="44" />
+            <div class="brand-text-group">
+              <span class="brand-name">NÉA</span>
+              <span class="brand-sub">PARIS</span>
+            </div>
+          </a>
+          <p>
+            Elevating daily self-care into sensorial rituals with wild-harvested French botanicals and clean, conscious cosmetic science.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Collections</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=skincare">Clean Skincare</a></li>
+            <li><a href="shop.html?category=makeup">Couture Makeup</a></li>
+            <li><a href="shop.html?category=haircare">Botanical Haircare</a></li>
+            <li><a href="shop.html">Best Sellers Archive</a></li>
+            <li><a href="shop.html">Award-Winning Serums</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Concierge</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Concierge & Contact</a></li>
+            <li><a href="about.html">Our Botanical Story</a></li>
+            <li><a href="contact.html">Shipping & Global Delivery</a></li>
+            <li><a href="contact.html">Sustainable Packaging</a></li>
+            <li><a href="contact.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>NÉA Journal</h4>
+          <p style="color: #C5B5BA; font-size: 0.88rem; margin-bottom: 1.25rem;">
+            Subscribe to receive private invitations to seasonal launches and skincare consultations.
+          </p>
+          <form class="newsletter-form" style="padding: 4px 6px 4px 14px;">
+            <input type="email" class="newsletter-input" placeholder="Your email..." required style="color: #fff;" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Copyright &copy; 2026 NÉA. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Floating Scroll to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

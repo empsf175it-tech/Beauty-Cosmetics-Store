@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NÉA — Haute Botanique & Luxury Cosmetics</title>
+  <meta name="description" content="Discover NÉA, high-performance clean skincare, couture makeup, and botanical haircare formulated with conscious French botanical science." />
+  <meta name="keywords" content="luxury cosmetics, clean beauty, botanical skincare, organic serum, velvet lipstick, couture makeup" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NÉA — Haute Botanique & Luxury Cosmetics" />
+  <meta property="og:description" content="Discover skincare, makeup and haircare designed to celebrate your natural beauty." />
+  <meta property="og:image" content="assets/images/hero-beauty.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" href="assets/images/logo-icon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/logo-icon.svg" />
+
+  <!-- Icons & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span><i class="fas fa-sparkles"></i> Complimentary Worldwide Delivery on Orders Over $75</span>
+    <span class="divider-dot">•</span>
+    <span><i class="fas fa-leaf"></i> 100% Clean & Sustainable Botanical Formulations</span>
+  </div>
+
+  <!-- Sticky Luxury Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container container-wide">
+      <div class="nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="NÉA Home">
+          <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-text-group">
+            <span class="brand-name">NÉA</span>
+            <span class="brand-sub">PARIS</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action Icons -->
+        <div class="nav-actions">
+          <button class="action-btn" id="headerSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+          </button>
+          
+          <button class="action-btn" id="headerWishBtn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="action-badge" id="headerWishCount">0</span>
+          </button>
+
+          <button class="action-btn" id="headerCartBtn" aria-label="Shopping Bag">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="action-badge" id="headerCartCount">0</span>
+          </button>
+
+          <a href="contact.html" class="nav-reach-btn" aria-label="Reach Out to Us">
+            <span>Reach</span>
+          </a>
+
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-menu-header">
+          <div class="brand-logo" style="gap: 0.65rem;">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img" width="36" height="36" />
+            <div class="brand-text-group">
+              <span class="brand-name" style="font-size: 1.35rem;">NÉA</span>
+              <span class="brand-sub" style="font-size: 0.52rem; letter-spacing: 0.38em;">PARIS</span>
+            </div>
+          </div>
+          <button class="close-btn" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+
+        <!-- Mobile Drawer Quick Actions -->
+        <div class="mobile-drawer-actions">
+          <button class="mobile-action-card" id="mobileSearchBtn" aria-label="Search Formulations">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </button>
+          
+          <button class="mobile-action-card" id="mobileWishBtn" aria-label="Wishlist">
+            <div class="mobile-icon-wrap">
+              <i class="far fa-heart"></i>
+              <span class="action-badge" id="mobileWishCount">0</span>
+            </div>
+            <span>Wishlist</span>
+          </button>
+
+          <button class="mobile-action-card" id="mobileCartBtn" aria-label="Shopping Bag">
+            <div class="mobile-icon-wrap">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="action-badge" id="mobileCartCount">0</span>
+            </div>
+            <span>Bag</span>
+          </button>
+        </div>
+
+        <ul class="mobile-links">
+          <li><a href="index.html" class="mobile-link active">Home</a></li>
+          <li><a href="shop.html" class="mobile-link">Shop</a></li>
+          <li><a href="about.html" class="mobile-link">About</a></li>
+          <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        </ul>
+
+        <div style="margin-top: 1.5rem; width: 100%;">
+          <a href="contact.html" class="mobile-drawer-reach-btn">
+            <span>Reach Us</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-light);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Conscious luxury botanical formulations for radiant skin and hair.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         SECTION 1 — UNIQUE PREMIUM HERO
+         ==================================================================== -->
+    <section class="hero-section" id="heroSection">
+      <div class="container container-wide">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy & CTAs -->
+          <div class="hero-content">
+            <span class="eyebrow"><i class="fas fa-sparkles"></i> The New Botanical Standard</span>
+            <h1 class="hero-title">
+              <span>Beauty</span>
+              <span class="title-accent">Made for You</span>
+            </h1>
+            <p class="hero-description">
+              Discover skincare, makeup and haircare designed to celebrate your natural beauty. Formulated with wild-harvested French botanicals and clinically proven cellular actives.
+            </p>
+
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-primary">
+                <span>Shop Collection</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#bestsellers" class="btn btn-secondary">
+                <span>Explore Best Sellers</span>
+              </a>
+            </div>
+
+            <div class="hero-micro-metrics">
+              <div class="metric-item">
+                <span class="metric-number">98%</span>
+                <span class="metric-label">Natural Origin</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">72h</span>
+                <span class="metric-label">Deep Hydration</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">Clean & Cruelty Free</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero 3D Visual Composition -->
+          <div class="hero-visual-wrapper">
+
+
+            <!-- Main Architectural Image Container -->
+            <div class="hero-stage">
+              <div class="hero-arch-bg">
+                <img src="assets/images/hero-beauty.webp" alt="NÉA Radiant Model with Botanical Serum" width="800" height="960" fetchpriority="high" />
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2 — SHOP BY CATEGORY ("Find Your Beauty Ritual")
+         ==================================================================== -->
+    <section class="section-category" id="categories">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="eyebrow">Curated Collections</span>
+          <h2>Find Your Beauty Ritual</h2>
+          <p>
+            Explore our tailored categories, crafted with clinical precision and sensorial elegance to elevate your daily regimen.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          
+          <!-- Category 1: Skincare -->
+          <div class="tilt-card-wrapper">
+            <div class="category-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="category-img-box">
+                <img src="assets/images/category-skincare.webp" alt="NÉA Skincare Serums and Quartz Roller" loading="lazy" />
+              </div>
+              <div class="category-content">
+
+                <h3 class="category-title">Skincare</h3>
+                <p class="category-desc">Hydration, treatment and everyday glow formulated for cellular resilience.</p>
+                <a href="shop.html?category=skincare" class="category-action">
+                  <span>Explore Skincare</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Makeup -->
+          <div class="tilt-card-wrapper">
+            <div class="category-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="category-img-box">
+                <img src="assets/images/category-makeup.webp" alt="NÉA Velvet Matte Lipsticks and Swatches" loading="lazy" />
+              </div>
+              <div class="category-content">
+
+                <h3 class="category-title">Makeup</h3>
+                <p class="category-desc">Color designed to express every version of you with breathable comfort.</p>
+                <a href="shop.html?category=makeup" class="category-action">
+                  <span>Explore Makeup</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Haircare -->
+          <div class="tilt-card-wrapper">
+            <div class="category-card tilt-card">
+              <div class="card-glare"></div>
+              <div class="category-img-box">
+                <img src="assets/images/category-haircare.webp" alt="NÉA Botanical Camellia Hair Elixir" loading="lazy" />
+              </div>
+              <div class="category-content">
+
+                <h3 class="category-title">Haircare</h3>
+                <p class="category-desc">Care and styling for healthier-looking hair infused with precious oils.</p>
+                <a href="shop.html?category=haircare" class="category-action">
+                  <span>Explore Haircare</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3 — BEST SELLERS ("Beauty Everyone Loves")
+         ==================================================================== -->
+    <section class="section-bestsellers" id="bestsellers">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="eyebrow">The Icons</span>
+            <h2>Beauty Everyone Loves</h2>
+            <p>Our most celebrated formulas, trusted by dermatologists and beauty editors worldwide.</p>
+          </div>
+          <div>
+            <a href="shop.html" class="btn btn-secondary btn-sm">
+              <span>View All Formulas</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dynamic Best Sellers Grid populated via main.js -->
+        <div class="product-grid-home" id="homeBestsellersGrid">
+          <!-- Populated by JavaScript with 3D Tilt Cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4 — FEATURED BRAND / COLLECTION ("THE RADIANCE COLLECTION")
+         ==================================================================== -->
+    <section class="section-featured-collection" id="collection">
+      <div class="container container-wide">
+        <div class="featured-grid">
+          
+          <!-- Visual Showcase -->
+          <div class="featured-visual">
+            <div class="featured-main-img-box">
+              <img src="assets/images/wlab-collection.jpg" alt="W-LAB Cosmetics Whitening and Sulphur Cream Collection Showcase" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Storytelling Content -->
+          <div class="featured-content">
+            <span class="eyebrow">Haute Botanical Capsule</span>
+            <h2>THE RADIANCE COLLECTION</h2>
+            <p>
+              “A curated ritual designed to hydrate, restore and reveal your natural glow.” Every bottle in this collection is enriched with rare Damascus Rose distillate, ferment-derived squalane, and stabilised Vitamin C to reverse the visual effects of urban living.
+            </p>
+
+            <div class="ritual-steps">
+              <div class="ritual-step-item">
+                <span class="step-number">01</span>
+                <div class="step-info">
+                  <h4>Infuse & Balance</h4>
+                  <p>Rose Quartz Essence Toner primes cellular membranes to absorb 3x more active ingredients.</p>
+                </div>
+              </div>
+
+              <div class="ritual-step-item">
+                <span class="step-number">02</span>
+                <div class="step-info">
+                  <h4>Restore & Protect</h4>
+                  <p>Cellular Radiance Serum neutralises environmental free radicals with 15% active Vitamin C.</p>
+                </div>
+              </div>
+
+              <div class="ritual-step-item">
+                <span class="step-number">03</span>
+                <div class="step-info">
+                  <h4>Lock & Seal</h4>
+                  <p>Barrier Repair Velvet Cream seals in essential moisture with biomimetic ceramides.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="shop.html?category=skincare" class="btn btn-gold">
+              <span>Explore Collection</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5 — BEAUTY NEWSLETTER / CTA ("Beauty Notes, Delivered")
+         ==================================================================== -->
+    <section class="section-newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter-box">
+          <span class="eyebrow eyebrow-gold"><i class="fas fa-envelope-open-text"></i> The Maison Circle</span>
+          <h2>Beauty Notes, Delivered</h2>
+          <p>
+            Join our beauty community for new launches, expert tips, seasonal botanical guides, and members-only offers.
+          </p>
+
+          <form class="newsletter-form" aria-label="Join Beauty Notes Newsletter">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address..." required aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Join Now</button>
+          </form>
+
+          <div class="newsletter-perks">
+            <span><i class="fas fa-check-circle"></i> Early access to limited batches</span>
+            <span><i class="fas fa-check-circle"></i> Complimentary beauty consultations</span>
+            <span><i class="fas fa-check-circle"></i> Exclusive secret archive sales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Side Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <aside class="cart-drawer" aria-label="Shopping Bag Drawer">
+      <div class="cart-header">
+        <h3>Your Beauty Bag</h3>
+        <button class="close-btn" id="cartDrawerClose" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="shipping-progress-bar">
+        <div class="progress-text" id="shippingProgressText">
+          <span>Complimentary Shipping at $75</span>
+          <span>0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered by main.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Estimated Subtotal</span>
+          <strong id="cartSubtotalAmount">$0.00</strong>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;" onclick="showToast('Proceeding to secure checkout...', 'fa-lock')">
+          <span>Checkout Securely</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p style="text-align: center; font-size: 0.75rem; color: var(--text-light); margin-top: 0.75rem;">
+          Taxes and shipping calculated at checkout.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="quickview-modal-overlay" id="quickViewModal">
+    <div class="quickview-dialog">
+      <button class="quickview-close-btn" onclick="closeQuickView()" aria-label="Close Quick View">&times;</button>
+      <div id="quickViewContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Search Overlay Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal-inner">
+      <div class="search-header-row">
+        <button class="close-btn" id="searchModalClose" aria-label="Close Search">&times;</button>
+      </div>
+      <input type="text" class="search-input-field" id="liveSearchInput" placeholder="Search formulas, categories, ingredients..." aria-label="Search Catalog" />
+      <div class="search-results-grid" id="searchResultsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="NÉA Home">
+            <img src="assets/images/logo-icon.svg" alt="NÉA Emblem" class="brand-logo-img footer-logo-img" width="44" height="44" />
+            <div class="brand-text-group">
+              <span class="brand-name">NÉA</span>
+              <span class="brand-sub">PARIS</span>
+            </div>
+          </a>
+          <p>
+            Elevating daily self-care into sensorial rituals with wild-harvested French botanicals and clean, conscious cosmetic science.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Shop Column -->
+        <div class="footer-col">
+          <h4>The Collections</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=skincare">Clean Skincare</a></li>
+            <li><a href="shop.html?category=makeup">Couture Makeup</a></li>
+            <li><a href="shop.html?category=haircare">Botanical Haircare</a></li>
+            <li><a href="shop.html">Best Sellers Archive</a></li>
+            <li><a href="shop.html">Award-Winning Serums</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Column -->
+        <div class="footer-col">
+          <h4>Customer Concierge</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Concierge & Contact</a></li>
+            <li><a href="about.html">Our Botanical Story</a></li>
+            <li><a href="contact.html">Shipping & Global Delivery</a></li>
+            <li><a href="contact.html">Sustainable Packaging</a></li>
+            <li><a href="contact.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-col">
+          <h4>NÉA Journal</h4>
+          <p style="color: #C5B5BA; font-size: 0.88rem; margin-bottom: 1.25rem;">
+            Subscribe to receive private invitations to seasonal launches and skincare consultations.
+          </p>
+          <form class="newsletter-form" style="padding: 4px 6px 4px 14px;">
+            <input type="email" class="newsletter-input" placeholder="Your email..." required style="color: #fff;" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Copyright &copy; 2026 NÉA. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Floating Scroll to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
